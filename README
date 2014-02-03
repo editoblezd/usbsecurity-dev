@@ -1,0 +1,4 @@
+If is specified a arg for --enable-logdir it must be absolute can't be relative path. 
+In other words the path must to begin with / character.
+
+The creation of log is optional for the application. 

@@ -1,0 +1,91 @@
+\hypertarget{usb-control_8c}{
+\section{usb-\/control.c File Reference}
+\label{usb-control_8c}\index{usb-\/control.c@{usb-\/control.c}}
+}
+{\ttfamily \#include \char`\"{}usb-\/control.h\char`\"{}}\par
+{\ttfamily \#include $<$unistd.h$>$}\par
+{\ttfamily \#include $<$glib.h$>$}\par
+{\ttfamily \#include $<$glib/gprintf.h$>$}\par
+{\ttfamily \#include $<$time.h$>$}\par
+{\ttfamily \#include $<$utmp.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$syslog.h$>$}\par
+{\ttfamily \#include $<$sys/types.h$>$}\par
+{\ttfamily \#include $<$err.h$>$}\par
+{\ttfamily \#include $<$locale.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{usb-control_8c_a0ddf1224851353fc92bfbff6f499fa97}{
+int {\bfseries main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})}
+\label{usb-control_8c_a0ddf1224851353fc92bfbff6f499fa97}
+
+\item 
+gboolean \hyperlink{usb-control_8c_abc3e9b8557ead2451394660134b421f7}{init\_\-values} ()
+\begin{DoxyCompactList}\small\item\em init the values in this file. \item\end{DoxyCompactList}\item 
+int \hyperlink{usb-control_8c_ab9932ed1777b7d0acf1e366fdd73ef3e}{fail} (char $\ast$dev)
+\begin{DoxyCompactList}\small\item\em shut down the interface of the partition's device. \item\end{DoxyCompactList}\item 
+void \hyperlink{usb-control_8c_a10395957994d66e936a4cb1e68fe47aa}{register\_\-a\_\-new\_\-device} ()
+\begin{DoxyCompactList}\small\item\em Put a new connected device in database. \item\end{DoxyCompactList}\item 
+int \hyperlink{usb-control_8c_a07d78dafcde5f5109f5cebe323b1d401}{is\_\-authorized} ()
+\begin{DoxyCompactList}\small\item\em Check if the current device is authorized. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Edilberto Blez D. 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{usb-control_8c_ab9932ed1777b7d0acf1e366fdd73ef3e}{
+\index{usb-\/control.c@{usb-\/control.c}!fail@{fail}}
+\index{fail@{fail}!usb-control.c@{usb-\/control.c}}
+\subsubsection[{fail}]{\setlength{\rightskip}{0pt plus 5cm}int fail (char $\ast$ {\em dev})}}
+\label{usb-control_8c_ab9932ed1777b7d0acf1e366fdd73ef3e}
+
+
+shut down the interface of the partition's device. 
+
+If this function is called that is because the device isi'n authorized and it must to shut down. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dev}]is a name of the device node. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a value non-\/zero 
+\end{DoxyReturn}
+\hypertarget{usb-control_8c_abc3e9b8557ead2451394660134b421f7}{
+\index{usb-\/control.c@{usb-\/control.c}!init\_\-values@{init\_\-values}}
+\index{init\_\-values@{init\_\-values}!usb-control.c@{usb-\/control.c}}
+\subsubsection[{init\_\-values}]{\setlength{\rightskip}{0pt plus 5cm}gboolean init\_\-values ()}}
+\label{usb-control_8c_abc3e9b8557ead2451394660134b421f7}
+
+
+init the values in this file. 
+
+This is one of the primary function that is called to connect a device. \begin{DoxyReturn}{Returns}
+either TRUE if all could be done or FALSE otherwise. 
+\end{DoxyReturn}
+\hypertarget{usb-control_8c_a07d78dafcde5f5109f5cebe323b1d401}{
+\index{usb-\/control.c@{usb-\/control.c}!is\_\-authorized@{is\_\-authorized}}
+\index{is\_\-authorized@{is\_\-authorized}!usb-control.c@{usb-\/control.c}}
+\subsubsection[{is\_\-authorized}]{\setlength{\rightskip}{0pt plus 5cm}int is\_\-authorized ()}}
+\label{usb-control_8c_a07d78dafcde5f5109f5cebe323b1d401}
+
+
+Check if the current device is authorized. 
+
+This function retrieves information about the device. If the device has never been put in the system it get value 0. if has been put but its identify is \char`\"{}No Autorizado\char`\"{} it get value 2. if has been authorized it get value 1. \begin{DoxyReturn}{Returns}
+either 1 if is authorized or (0 or 2) otherwise. 
+\end{DoxyReturn}
+\hypertarget{usb-control_8c_a10395957994d66e936a4cb1e68fe47aa}{
+\index{usb-\/control.c@{usb-\/control.c}!register\_\-a\_\-new\_\-device@{register\_\-a\_\-new\_\-device}}
+\index{register\_\-a\_\-new\_\-device@{register\_\-a\_\-new\_\-device}!usb-control.c@{usb-\/control.c}}
+\subsubsection[{register\_\-a\_\-new\_\-device}]{\setlength{\rightskip}{0pt plus 5cm}void register\_\-a\_\-new\_\-device ()}}
+\label{usb-control_8c_a10395957994d66e936a4cb1e68fe47aa}
+
+
+Put a new connected device in database. 
+
+When you connect for first time a device it is added to the database with the \char`\"{}No Autorizado\char`\"{} identify. 

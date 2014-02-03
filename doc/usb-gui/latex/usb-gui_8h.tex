@@ -1,0 +1,201 @@
+\hypertarget{usb-gui_8h}{
+\section{usb-\/gui.h File Reference}
+\label{usb-gui_8h}\index{usb-\/gui.h@{usb-\/gui.h}}
+}
+{\ttfamily \#include $<$gtk/gtk.h$>$}\par
+{\ttfamily \#include \char`\"{}../common/common.h\char`\"{}}\par
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structDEV}{DEV}
+\begin{DoxyCompactList}\small\item\em A device. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55ba237841854e4e21628727932d38fdf4c5}{COLUMN\_\-MARKED}, 
+\hyperlink{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55bad42963e993a0d76e1a2511cf50b17c79}{COLUMN\_\-ID}, 
+\hyperlink{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55ba0f37881f7ff6971ea31dad00acbd4510}{COLUMN\_\-SERIAL}, 
+\hyperlink{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55ba94a1900486855d9c85622e2c106104a9}{NUM\_\-COLUMNS}
+ \}
+\begin{DoxyCompactList}\small\item\em field for the GtkListStore \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{usb-gui_8h_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em main function. \item\end{DoxyCompactList}\item 
+void \hyperlink{usb-gui_8h_a3893dfbb92994b551fb34e396c26f5d1}{update\_\-tool\_\-bar} ()
+\begin{DoxyCompactList}\small\item\em Modify status of toolbar. \item\end{DoxyCompactList}\item 
+GtkWidget $\ast$ \hyperlink{usb-gui_8h_a844df29073de408040bde1e4eea3f474}{do\_\-list\_\-store} ()
+\begin{DoxyCompactList}\small\item\em Function that creates the main window. \item\end{DoxyCompactList}\item 
+\hyperlink{structDEV}{DEV} $\ast$ \hyperlink{usb-gui_8h_a1b365986807e777a4e3da379042f731b}{read\_\-devices\_\-list} ()
+\begin{DoxyCompactList}\small\item\em Create a list of \hyperlink{structDEV}{DEV} $\ast$ Read the database normaly in /database.db and add to \hyperlink{structDEV}{DEV} $\ast$ list the device there are. \item\end{DoxyCompactList}\item 
+void \hyperlink{usb-gui_8h_adebdd69140dd995853b3d4a40de3c058}{remove\_\-item} (GtkWidget $\ast$widget, GdkEvent $\ast$event, gpointer data)
+\begin{DoxyCompactList}\small\item\em Delete rows from treeview. \item\end{DoxyCompactList}\item 
+void \hyperlink{usb-gui_8h_a36cb198a8cc3b38c2ee2cd9f50b97d67}{authorize\_\-device} (\hyperlink{structDEV}{DEV} $\ast$dev)
+\begin{DoxyCompactList}\small\item\em Add a device to a database. \item\end{DoxyCompactList}\item 
+void \hyperlink{usb-gui_8h_ad870b459afa4a0b65382e4bb1a57ae10}{fatal\_\-error\_\-signal} (int sig)
+\begin{DoxyCompactList}\small\item\em handler for exceptions. \item\end{DoxyCompactList}\item 
+void \hyperlink{usb-gui_8h_aafc00ee8c683e0173f3e064fcefd10a2}{add\_\-item} (GtkWidget $\ast$widget, GdkEvent $\ast$event, gpointer data)
+\begin{DoxyCompactList}\small\item\em Add a item to treeview. \item\end{DoxyCompactList}\item 
+gchar $\ast$ \hyperlink{usb-gui_8h_abf4085a43262b45dfe7d93ba0cbd102c}{get\_\-new\_\-device\_\-id} ()
+\begin{DoxyCompactList}\small\item\em Get a identify new for a row. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{usb-gui_8h_a6d4b8b8c6be4c4a8bb0d89f8a40324c4}{
+volatile sig\_\-atomic\_\-t \hyperlink{usb-gui_8h_a6d4b8b8c6be4c4a8bb0d89f8a40324c4}{fatal\_\-error\_\-in\_\-progress} = 0}
+\label{usb-gui_8h_a6d4b8b8c6be4c4a8bb0d89f8a40324c4}
+
+\begin{DoxyCompactList}\small\item\em Used in signal manage. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Edilberto Blez D. 
+
+Abel Alfonso F.D. 
+\end{DoxyAuthor}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55b}{
+\subsubsection[{"@0}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}
+\label{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55b}
+
+
+field for the GtkListStore 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{COLUMN\_\-MARKED@{COLUMN\_\-MARKED}!usb-\/gui.h@{usb-\/gui.h}}\index{usb-\/gui.h@{usb-\/gui.h}!COLUMN\_\-MARKED@{COLUMN\_\-MARKED}}\item[{\em 
+\hypertarget{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55ba237841854e4e21628727932d38fdf4c5}{
+COLUMN\_\-MARKED}
+\label{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55ba237841854e4e21628727932d38fdf4c5}
+}]indicate if is marked (Value = 0) \index{COLUMN\_\-ID@{COLUMN\_\-ID}!usb-\/gui.h@{usb-\/gui.h}}\index{usb-\/gui.h@{usb-\/gui.h}!COLUMN\_\-ID@{COLUMN\_\-ID}}\item[{\em 
+\hypertarget{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55bad42963e993a0d76e1a2511cf50b17c79}{
+COLUMN\_\-ID}
+\label{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55bad42963e993a0d76e1a2511cf50b17c79}
+}]identifier (Value = 1) \index{COLUMN\_\-SERIAL@{COLUMN\_\-SERIAL}!usb-\/gui.h@{usb-\/gui.h}}\index{usb-\/gui.h@{usb-\/gui.h}!COLUMN\_\-SERIAL@{COLUMN\_\-SERIAL}}\item[{\em 
+\hypertarget{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55ba0f37881f7ff6971ea31dad00acbd4510}{
+COLUMN\_\-SERIAL}
+\label{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55ba0f37881f7ff6971ea31dad00acbd4510}
+}]serial number (Valued = 2) \index{NUM\_\-COLUMNS@{NUM\_\-COLUMNS}!usb-\/gui.h@{usb-\/gui.h}}\index{usb-\/gui.h@{usb-\/gui.h}!NUM\_\-COLUMNS@{NUM\_\-COLUMNS}}\item[{\em 
+\hypertarget{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55ba94a1900486855d9c85622e2c106104a9}{
+NUM\_\-COLUMNS}
+\label{usb-gui_8h_a06fc87d81c62e9abb8790b6e5713c55ba94a1900486855d9c85622e2c106104a9}
+}]Number of the field, in this case Value = 3. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{usb-gui_8h_aafc00ee8c683e0173f3e064fcefd10a2}{
+\index{usb-\/gui.h@{usb-\/gui.h}!add\_\-item@{add\_\-item}}
+\index{add\_\-item@{add\_\-item}!usb-gui.h@{usb-\/gui.h}}
+\subsubsection[{add\_\-item}]{\setlength{\rightskip}{0pt plus 5cm}void add\_\-item (GtkWidget $\ast$ {\em widget}, \/  GdkEvent $\ast$ {\em event}, \/  gpointer {\em data})}}
+\label{usb-gui_8h_aafc00ee8c683e0173f3e064fcefd10a2}
+
+
+Add a item to treeview. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em widget}]Component. \item[{\em event}]Action. \item[{\em data}]Data passed to function. \end{DoxyParams}
+\hypertarget{usb-gui_8h_a36cb198a8cc3b38c2ee2cd9f50b97d67}{
+\index{usb-\/gui.h@{usb-\/gui.h}!authorize\_\-device@{authorize\_\-device}}
+\index{authorize\_\-device@{authorize\_\-device}!usb-gui.h@{usb-\/gui.h}}
+\subsubsection[{authorize\_\-device}]{\setlength{\rightskip}{0pt plus 5cm}void authorize\_\-device ({\bf DEV} $\ast$ {\em dev})}}
+\label{usb-gui_8h_a36cb198a8cc3b38c2ee2cd9f50b97d67}
+
+
+Add a device to a database. 
+
+This function essentially add a new entry in a database with the data of dev. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dev}]A device. \end{DoxyParams}
+\hypertarget{usb-gui_8h_a844df29073de408040bde1e4eea3f474}{
+\index{usb-\/gui.h@{usb-\/gui.h}!do\_\-list\_\-store@{do\_\-list\_\-store}}
+\index{do\_\-list\_\-store@{do\_\-list\_\-store}!usb-gui.h@{usb-\/gui.h}}
+\subsubsection[{do\_\-list\_\-store}]{\setlength{\rightskip}{0pt plus 5cm}GtkWidget$\ast$ do\_\-list\_\-store ()}}
+\label{usb-gui_8h_a844df29073de408040bde1e4eea3f474}
+
+
+Function that creates the main window. 
+
+Creates all the component that is present in the main window and itself. \begin{DoxyReturn}{Returns}
+Main window 
+\end{DoxyReturn}
+\hypertarget{usb-gui_8h_ad870b459afa4a0b65382e4bb1a57ae10}{
+\index{usb-\/gui.h@{usb-\/gui.h}!fatal\_\-error\_\-signal@{fatal\_\-error\_\-signal}}
+\index{fatal\_\-error\_\-signal@{fatal\_\-error\_\-signal}!usb-gui.h@{usb-\/gui.h}}
+\subsubsection[{fatal\_\-error\_\-signal}]{\setlength{\rightskip}{0pt plus 5cm}void fatal\_\-error\_\-signal (int {\em sig})}}
+\label{usb-gui_8h_ad870b459afa4a0b65382e4bb1a57ae10}
+
+
+handler for exceptions. 
+
+This function is called when a exception is take place in the system. When arrive a signal for to close the program this keep the signal in a circule since all clean task is performed. When all is done it set the default handler for that signal and allow to close the program. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sig}]A in that identify the arrived signal. \end{DoxyParams}
+\hypertarget{usb-gui_8h_abf4085a43262b45dfe7d93ba0cbd102c}{
+\index{usb-\/gui.h@{usb-\/gui.h}!get\_\-new\_\-device\_\-id@{get\_\-new\_\-device\_\-id}}
+\index{get\_\-new\_\-device\_\-id@{get\_\-new\_\-device\_\-id}!usb-gui.h@{usb-\/gui.h}}
+\subsubsection[{get\_\-new\_\-device\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}gchar$\ast$ get\_\-new\_\-device\_\-id ()}}
+\label{usb-gui_8h_abf4085a43262b45dfe7d93ba0cbd102c}
+
+
+Get a identify new for a row. 
+
+This is a auxiliary function which is called by add\_\-item. This show a confirmation message. \begin{DoxyReturn}{Returns}
+Identify's device. 
+\end{DoxyReturn}
+\hypertarget{usb-gui_8h_a3c04138a5bfe5d72780bb7e82a18e627}{
+\index{usb-\/gui.h@{usb-\/gui.h}!main@{main}}
+\index{main@{main}!usb-gui.h@{usb-\/gui.h}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (int {\em argc}, \/  char $\ast$$\ast$ {\em argv})}}
+\label{usb-gui_8h_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+main function. 
+
+This is the begin of the program. 
+\begin{DoxyParams}{Parameters}
+\item[{\em argc}]Number of the arguments. \item[{\em argv}]List of the arguments. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{usb-gui_8h_a1b365986807e777a4e3da379042f731b}{
+\index{usb-\/gui.h@{usb-\/gui.h}!read\_\-devices\_\-list@{read\_\-devices\_\-list}}
+\index{read\_\-devices\_\-list@{read\_\-devices\_\-list}!usb-gui.h@{usb-\/gui.h}}
+\subsubsection[{read\_\-devices\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DEV}$\ast$ read\_\-devices\_\-list ()}}
+\label{usb-gui_8h_a1b365986807e777a4e3da379042f731b}
+
+
+Create a list of \hyperlink{structDEV}{DEV} $\ast$ Read the database normaly in /database.db and add to \hyperlink{structDEV}{DEV} $\ast$ list the device there are. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{structDEV}{DEV} $\ast$ pointer 
+\end{DoxyReturn}
+\hypertarget{usb-gui_8h_adebdd69140dd995853b3d4a40de3c058}{
+\index{usb-\/gui.h@{usb-\/gui.h}!remove\_\-item@{remove\_\-item}}
+\index{remove\_\-item@{remove\_\-item}!usb-gui.h@{usb-\/gui.h}}
+\subsubsection[{remove\_\-item}]{\setlength{\rightskip}{0pt plus 5cm}void remove\_\-item (GtkWidget $\ast$ {\em widget}, \/  GdkEvent $\ast$ {\em event}, \/  gpointer {\em data})}}
+\label{usb-gui_8h_adebdd69140dd995853b3d4a40de3c058}
+
+
+Delete rows from treeview. 
+
+Search all rows these are marked and delete it. 
+\begin{DoxyParams}{Parameters}
+\item[{\em widget}]The object the represent the component. \item[{\em event}]is the action that was performed. \item[{\em data}]other data that is passed to method. \end{DoxyParams}
+\hypertarget{usb-gui_8h_a3893dfbb92994b551fb34e396c26f5d1}{
+\index{usb-\/gui.h@{usb-\/gui.h}!update\_\-tool\_\-bar@{update\_\-tool\_\-bar}}
+\index{update\_\-tool\_\-bar@{update\_\-tool\_\-bar}!usb-gui.h@{usb-\/gui.h}}
+\subsubsection[{update\_\-tool\_\-bar}]{\setlength{\rightskip}{0pt plus 5cm}void update\_\-tool\_\-bar ()}}
+\label{usb-gui_8h_a3893dfbb92994b551fb34e396c26f5d1}
+
+
+Modify status of toolbar. 
+
+Change the status of the component for add and delete row in the treeview. 

@@ -1,0 +1,95 @@
+.TH usbcontrol 1 "Mar 2013" local "Linux Programmer's Manual"
+.SH NAME
+usbcontrol \- allows to control the USB device within operating system.
+
+.SH SYNOPSIS
+.B usbcontrol
+.RB [ -l | --list ]
+.br
+.B usbcontrol
+.RB [[ -c | --change ] 
+.IR ID 
+.IR NAME ] 
+.br
+.B usbcontrol
+.RB [[ -d | --delete ]
+.IR ID ]
+.br
+.B usbcontrol
+.RB [[ -g | --get ]
+.IR ID ]
+.br
+.B usbcontrol
+.RB [[ -u | --udev ]
+.IR SYSPATH ]
+.br
+.B usbcontrol
+.RB [ -v | --version ]
+.br
+.B usbcontrol
+.RB [ -h | --help ]
+.br
+.SH DESCRIPTION
+.PP
+.B usbcontrol
+is a little program that allows manage which 
+.B USB 
+devices can be put into system.
+For to do this it keeps information about the authorized device in a database.
+When a device is put in a system it across specified
+.B udev  
+call the program. To this program 
+.B udev
+pass the path where is the device on sys. Thus 
+.B udev
+doing the 
+.B udev rules 
+and passing the 
+.BR -u " or "  --udev
+and the device's sys path can determine if a device can be show or no.
+.PP
+Also, 
+.B usbcontrol 
+allow to add, change, list and delete any device present in its database.
+.B OPTIONS 
+section shows the options more deeper.
+
+.SH OPTIONS
+No option is mandatory, if no option is specified so 
+.BR -l " or " --list
+option is assumed by default.
+.TP 8
+.BR  -l | --list 
+Show all device that is present in a database.
+.TP 8
+.BR  -c | --change " ID NAME"
+Change the name of a authorized device into database from its ID.
+.TP 8
+.BR  -d | --delete " ID "
+Delete the device which have ID as identifier number.
+.TP 8
+.BR  -g | --get " ID "
+Select information about a device from its ID.
+.TP 8
+.BR  -u | --udev " PATH "
+Used by udev where PATH is the device's way into sys.
+.TP 8
+.BR  -v | --version
+Show the actual version.
+.TP 8
+.BR  -h | --help
+Show the quick help.
+
+.SH FILES
+.I /etc/usbcontrol/database.db
+.br
+.I /usr/sbin/usbcontrol
+.br
+.I /etc/udev/rules.d/70-disks-usb.rules
+.br
+
+.SH SEE ALSO
+.BR udev (7)
+
+.SH AUTHOR
+Written by Edilberto Blez, eblez@uci.cu

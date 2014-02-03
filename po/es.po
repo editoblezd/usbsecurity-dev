@@ -1,0 +1,103 @@
+# Spanish translations for usb-control package
+# Traducciones al español para el paquete usb-control.
+# Copyright (C) 2014 THE usb-control'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the usb-control package.
+# Administrador <eblez@uci.cu>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: usb-control 0.1\n"
+"Report-Msgid-Bugs-To: bug-gnu-gettext@gnu.org\n"
+"POT-Creation-Date: 2014-01-31 09:54-0500\n"
+"PO-Revision-Date: 2014-01-29 10:01-0500\n"
+"Last-Translator: Administrador <eblez@uci.cu>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/usb-gui/usb-gui.c:31
+msgid "Are you sure to delete the device?"
+msgstr "¿Estás seguro de eliminar el dispositivo?"
+
+#: src/usb-gui/usb-gui.c:149
+msgid "Add Device"
+msgstr "Adicionar Dispositivo"
+
+#: src/usb-gui/usb-gui.c:171
+msgid "Identifier of device"
+msgstr "Identificador del dispositivo"
+
+#: src/usb-gui/usb-gui.c:177
+msgid "Note: We recommend don't repeat identifiers."
+msgstr "Nota: Recomendamos no repetir identificadores"
+
+#: src/usb-gui/usb-gui.c:243
+msgid "Identifier"
+msgstr "Identificador"
+
+#: src/usb-gui/usb-gui.c:284
+msgid "Devices Manager"
+msgstr "Administración de Dispositivos"
+
+#: src/usb-gui/usb-gui.c:295
+msgid "Allow Device"
+msgstr "Autorizar Dispositivo"
+
+#: src/usb-gui/usb-gui.c:300
+msgid "Deny Device"
+msgstr "Desautorizar Dispositivo"
+
+#: src/usb-gui/usb-gui.c:414
+msgid ""
+"You aren't root user\n"
+"No eres usuario root(Administrador)\n"
+msgstr ""
+
+#: src/usb-control/usb-control.c:36
+#, c-format
+msgid "option parsing failed: %s\n"
+msgstr "opción fallida: %s\n"
+
+#: src/usb-control/usb-control.c:41
+#, c-format
+msgid "Version: usbcontrol 0.1\n"
+msgstr "Versión: usbcontrol 0.1\n"
+
+#: src/usb-control/usb-control.c:65 src/usb-control/usb-control.c:115
+msgid "ID."
+msgstr "ID."
+
+#: src/usb-control/usb-control.c:65 src/usb-control/usb-control.c:115
+msgid "NAME"
+msgstr "NOMBRE"
+
+#: src/usb-control/usb-control.c:65 src/usb-control/usb-control.c:115
+msgid "SERIAL"
+msgstr "SERIAL"
+
+#~ msgid "Look Neyvis, this is true"
+#~ msgstr "Mira Neyvis, esto funciona"
+
+msgid "Show all device"
+msgstr "Mostrar todos los dispositivos"
+
+msgid "Show the usbcontrol's version"
+msgstr "Mostrar la versión de usbcontrol"
+
+msgid "Delete the device which have S as Serial"
+msgstr "Borrar el dispositivo con serial S"
+
+msgid "Select information about a device from its serial S"
+msgstr "Seleccionar información del dispositivo con serial S"
+
+msgid "Set N name, in combination with --get=S, to selected device "
+msgstr ""
+"Establecer un nuevo nombre, se usa en combinación con la opción --get=S, "
+"para el dispositico seleccionado"
+
+msgid "Used by udev where PATH is the device's way in sys(%S%p)"
+msgstr ""
+"Se usa con udev usando como parámetro el PATH del dispositivos (%S%p)"

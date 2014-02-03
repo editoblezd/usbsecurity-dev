@@ -1,0 +1,205 @@
+.TH "usb-gui.h" 3 "27 Jan 2013" "Version 0.1" "usb-gui" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+usb-gui.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <gtk/gtk.h>\fP
+.br
+\fC#include '../common/common.h'\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBDEV\fP"
+.br
+.RI "\fIA device. \fP"
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBCOLUMN_MARKED\fP, \fBCOLUMN_ID\fP, \fBCOLUMN_SERIAL\fP, \fBNUM_COLUMNS\fP }"
+.br
+.RI "\fIfield for the GtkListStore \fP"
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP (int argc, char **argv)"
+.br
+.RI "\fImain function. \fP"
+.ti -1c
+.RI "void \fBupdate_tool_bar\fP ()"
+.br
+.RI "\fIModify status of toolbar. \fP"
+.ti -1c
+.RI "GtkWidget * \fBdo_list_store\fP ()"
+.br
+.RI "\fIFunction that creates the main window. \fP"
+.ti -1c
+.RI "\fBDEV\fP * \fBread_devices_list\fP ()"
+.br
+.RI "\fICreate a list of \fBDEV\fP * Read the database normaly in /database.db and add to \fBDEV\fP * list the device there are. \fP"
+.ti -1c
+.RI "void \fBremove_item\fP (GtkWidget *widget, GdkEvent *event, gpointer data)"
+.br
+.RI "\fIDelete rows from treeview. \fP"
+.ti -1c
+.RI "void \fBauthorize_device\fP (\fBDEV\fP *dev)"
+.br
+.RI "\fIAdd a device to a database. \fP"
+.ti -1c
+.RI "void \fBfatal_error_signal\fP (int sig)"
+.br
+.RI "\fIhandler for exceptions. \fP"
+.ti -1c
+.RI "void \fBadd_item\fP (GtkWidget *widget, GdkEvent *event, gpointer data)"
+.br
+.RI "\fIAdd a item to treeview. \fP"
+.ti -1c
+.RI "gchar * \fBget_new_device_id\fP ()"
+.br
+.RI "\fIGet a identify new for a row. \fP"
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile sig_atomic_t \fBfatal_error_in_progress\fP = 0"
+.br
+.RI "\fIUsed in signal manage. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBAuthor:\fP
+.RS 4
+Edilberto Blez D. 
+.PP
+Abel Alfonso F.D. 
+.RE
+.PP
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "anonymous enum"
+.PP
+field for the GtkListStore 
+.PP
+\fBEnumerator: \fP
+.in +1c
+.TP
+\fB\fICOLUMN_MARKED \fP\fP
+indicate if is marked (Value = 0) 
+.TP
+\fB\fICOLUMN_ID \fP\fP
+identifier (Value = 1) 
+.TP
+\fB\fICOLUMN_SERIAL \fP\fP
+serial number (Valued = 2) 
+.TP
+\fB\fINUM_COLUMNS \fP\fP
+Number of the field, in this case Value = 3. 
+.SH "Function Documentation"
+.PP 
+.SS "void add_item (GtkWidget * widget, GdkEvent * event, gpointer data)"
+.PP
+Add a item to treeview. \fBParameters:\fP
+.RS 4
+\fIwidget\fP Component. 
+.br
+\fIevent\fP Action. 
+.br
+\fIdata\fP Data passed to function. 
+.RE
+.PP
+
+.SS "void authorize_device (\fBDEV\fP * dev)"
+.PP
+Add a device to a database. This function essentially add a new entry in a database with the data of dev. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdev\fP A device. 
+.RE
+.PP
+
+.SS "GtkWidget* do_list_store ()"
+.PP
+Function that creates the main window. Creates all the component that is present in the main window and itself. 
+.PP
+\fBReturns:\fP
+.RS 4
+Main window 
+.RE
+.PP
+
+.SS "void fatal_error_signal (int sig)"
+.PP
+handler for exceptions. This function is called when a exception is take place in the system. When arrive a signal for to close the program this keep the signal in a circule since all clean task is performed. When all is done it set the default handler for that signal and allow to close the program. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsig\fP A in that identify the arrived signal. 
+.RE
+.PP
+
+.SS "gchar* get_new_device_id ()"
+.PP
+Get a identify new for a row. This is a auxiliary function which is called by add_item. This show a confirmation message. 
+.PP
+\fBReturns:\fP
+.RS 4
+Identify's device. 
+.RE
+.PP
+
+.SS "int main (int argc, char ** argv)"
+.PP
+main function. This is the begin of the program. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIargc\fP Number of the arguments. 
+.br
+\fIargv\fP List of the arguments. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "\fBDEV\fP* read_devices_list ()"
+.PP
+Create a list of \fBDEV\fP * Read the database normaly in /database.db and add to \fBDEV\fP * list the device there are. \fBReturns:\fP
+.RS 4
+\fBDEV\fP * pointer 
+.RE
+.PP
+
+.SS "void remove_item (GtkWidget * widget, GdkEvent * event, gpointer data)"
+.PP
+Delete rows from treeview. Search all rows these are marked and delete it. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwidget\fP The object the represent the component. 
+.br
+\fIevent\fP is the action that was performed. 
+.br
+\fIdata\fP other data that is passed to method. 
+.RE
+.PP
+
+.SS "void update_tool_bar ()"
+.PP
+Modify status of toolbar. Change the status of the component for add and delete row in the treeview. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for usb-gui from the source code.

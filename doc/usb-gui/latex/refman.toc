@@ -1,0 +1,30 @@
+\contentsline {chapter}{\numberline {1}Data Structure Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Data Structures}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Data Structure Documentation}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}request Struct Reference}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}DEV Struct Reference}{6}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{6}{subsection.3.2.1}
+\contentsline {chapter}{\numberline {4}File Documentation}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}/media/4ec1cddc-\/24fd-\/4aaa-\/a1b9-\/43731b032863/home/editoblez/workspace/usb/src/common/common.h File Reference}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{8}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Function Documentation}{8}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}get\_\discretionary {-}{}{}date}{8}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}getmsg}{9}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {4.1.2.3}getuser}{9}{subsubsection.4.1.2.3}
+\contentsline {subsubsection}{\numberline {4.1.2.4}register\_\discretionary {-}{}{}log}{9}{subsubsection.4.1.2.4}
+\contentsline {section}{\numberline {4.2}usb-\/gui.h File Reference}{10}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{11}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Enumeration Type Documentation}{11}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}"@0}{11}{subsubsection.4.2.2.1}
+\contentsline {subsection}{\numberline {4.2.3}Function Documentation}{11}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}add\_\discretionary {-}{}{}item}{11}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}authorize\_\discretionary {-}{}{}device}{11}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {4.2.3.3}do\_\discretionary {-}{}{}list\_\discretionary {-}{}{}store}{12}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {4.2.3.4}fatal\_\discretionary {-}{}{}error\_\discretionary {-}{}{}signal}{12}{subsubsection.4.2.3.4}
+\contentsline {subsubsection}{\numberline {4.2.3.5}get\_\discretionary {-}{}{}new\_\discretionary {-}{}{}device\_\discretionary {-}{}{}id}{12}{subsubsection.4.2.3.5}
+\contentsline {subsubsection}{\numberline {4.2.3.6}main}{12}{subsubsection.4.2.3.6}
+\contentsline {subsubsection}{\numberline {4.2.3.7}read\_\discretionary {-}{}{}devices\_\discretionary {-}{}{}list}{12}{subsubsection.4.2.3.7}
+\contentsline {subsubsection}{\numberline {4.2.3.8}remove\_\discretionary {-}{}{}item}{13}{subsubsection.4.2.3.8}
+\contentsline {subsubsection}{\numberline {4.2.3.9}update\_\discretionary {-}{}{}tool\_\discretionary {-}{}{}bar}{13}{subsubsection.4.2.3.9}

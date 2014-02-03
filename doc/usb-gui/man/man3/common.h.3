@@ -1,0 +1,155 @@
+.TH "/media/4ec1cddc-24fd-4aaa-a1b9-43731b032863/home/editoblez/workspace/usb/src/common/common.h" 3 "27 Jan 2013" "Version 0.1" "usb-gui" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/media/4ec1cddc-24fd-4aaa-a1b9-43731b032863/home/editoblez/workspace/usb/src/common/common.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <unistd.h>\fP
+.br
+\fC#include <glib.h>\fP
+.br
+\fC#include <glib/gprintf.h>\fP
+.br
+\fC#include <time.h>\fP
+.br
+\fC#include <utmp.h>\fP
+.br
+\fC#include <stdio.h>\fP
+.br
+\fC#include <stdlib.h>\fP
+.br
+\fC#include <string.h>\fP
+.br
+\fC#include <syslog.h>\fP
+.br
+\fC#include <sys/types.h>\fP
+.br
+\fC#include <err.h>\fP
+.br
+\fC#include <locale.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fB__request\fP"
+.br
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDB\fP   '/etc/usb-control/database.db'"
+.br
+.RI "\fIPlace where are the database. \fP"
+.ti -1c
+.RI "#define \fBLOG\fP   '/var/log/usb-control.log'"
+.br
+.RI "\fIPlace where are the application's logs. \fP"
+.ti -1c
+.RI "#define \fBNO_AUTORIZADO\fP   'No autorizado'"
+.br
+.RI "\fIDefault identifier for connected device new to system. \fP"
+.ti -1c
+.RI "#define \fBENV_SERIAL\fP   'ID_SERIAL_SHORT'"
+.br
+.RI "\fISerial number short imported from udev environment. \fP"
+.ti -1c
+.RI "#define \fBENV_DEVTYPE\fP   'DEVTYPE'"
+.br
+.RI "\fIDevtype imported from udev environment. \fP"
+.ti -1c
+.RI "#define \fBLOCK\fP   '/tmp/usbsecurity.lock'"
+.br
+.RI "\fIThis file avoid instances multiple of this application. \fP"
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fB__request\fP \fBrequest\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBregister_log\fP ()"
+.br
+.RI "\fIAdd a entry to log file. \fP"
+.ti -1c
+.RI "gchar * \fBget_date\fP ()"
+.br
+.RI "\fIGet a date in gchar * form. \fP"
+.ti -1c
+.RI "gchar * \fBgetuser\fP ()"
+.br
+.RI "\fIGet the current user in the system. \fP"
+.ti -1c
+.RI "const gchar * \fBgetmsg\fP ()"
+.br
+.RI "\fIName of action. \fP"
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBrequest\fP \fBinfo\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBAuthor:\fP
+.RS 4
+Edilberto Blez D. 
+.RE
+.PP
+
+.SH "Function Documentation"
+.PP 
+.SS "gchar* get_date ()"
+.PP
+Get a date in gchar * form. This function is used to retrieve the date from the system. 
+.PP
+\fBReturns:\fP
+.RS 4
+gchar * with the current date. 
+.RE
+.PP
+
+.SS "const gchar* getmsg ()"
+.PP
+Name of action. Get a name of the action according with the value of info.autorized. 
+.PP
+\fBReturns:\fP
+.RS 4
+a gchar * associate. 
+.RE
+.PP
+
+.SS "gchar* getuser ()"
+.PP
+Get the current user in the system. Tries to get the user that is current connected to system. As can be connectar more than one user, the application tries to get one if this can, otherwise unknown is returned. 
+.PP
+\fBReturns:\fP
+.RS 4
+One current user o unknown if can't. 
+.RE
+.PP
+
+.SS "void register_log ()"
+.PP
+Add a entry to log file. Depend of a action this function add a new entry to a log file. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinfo\fP contain the all necessary information about the action. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for usb-gui from the source code.

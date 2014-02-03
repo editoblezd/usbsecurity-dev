@@ -1,0 +1,73 @@
+\hypertarget{common_8c}{
+\section{/media/4ec1cddc-\/24fd-\/4aaa-\/a1b9-\/43731b032863/home/editoblez/workspace/usb/src/common/common.c File Reference}
+\label{common_8c}\index{/media/4ec1cddc-\/24fd-\/4aaa-\/a1b9-\/43731b032863/home/editoblez/workspace/usb/src/common/common.c@{/media/4ec1cddc-\/24fd-\/4aaa-\/a1b9-\/43731b032863/home/editoblez/workspace/usb/src/common/common.c}}
+}
+{\ttfamily \#include \char`\"{}common.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{common_8c_a2d88a48e729e443ff4ca9e9d4d0d050a}{register\_\-log} ()
+\begin{DoxyCompactList}\small\item\em Add a entry to log file. \item\end{DoxyCompactList}\item 
+gchar $\ast$ \hyperlink{common_8c_aaa309506405ecbe85e807e466bc02511}{get\_\-date} ()
+\begin{DoxyCompactList}\small\item\em Get a date in gchar $\ast$ form. \item\end{DoxyCompactList}\item 
+gchar $\ast$ \hyperlink{common_8c_a90fc447b9b5117f1b6393148b6c7d901}{getuser} ()
+\begin{DoxyCompactList}\small\item\em Get the current user in the system. \item\end{DoxyCompactList}\item 
+const gchar $\ast$ \hyperlink{common_8c_addedbaab8e213385906b594e39111bbf}{getmsg} ()
+\begin{DoxyCompactList}\small\item\em Name of action. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Edilberto Blez D. 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{common_8c_aaa309506405ecbe85e807e466bc02511}{
+\index{common.c@{common.c}!get\_\-date@{get\_\-date}}
+\index{get\_\-date@{get\_\-date}!common.c@{common.c}}
+\subsubsection[{get\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}gchar$\ast$ get\_\-date ()}}
+\label{common_8c_aaa309506405ecbe85e807e466bc02511}
+
+
+Get a date in gchar $\ast$ form. 
+
+This function is used to retrieve the date from the system. \begin{DoxyReturn}{Returns}
+gchar $\ast$ with the current date. 
+\end{DoxyReturn}
+\hypertarget{common_8c_addedbaab8e213385906b594e39111bbf}{
+\index{common.c@{common.c}!getmsg@{getmsg}}
+\index{getmsg@{getmsg}!common.c@{common.c}}
+\subsubsection[{getmsg}]{\setlength{\rightskip}{0pt plus 5cm}const gchar$\ast$ getmsg ()}}
+\label{common_8c_addedbaab8e213385906b594e39111bbf}
+
+
+Name of action. 
+
+Get a name of the action according with the value of info.autorized. \begin{DoxyReturn}{Returns}
+a gchar $\ast$ associate. 
+\end{DoxyReturn}
+\hypertarget{common_8c_a90fc447b9b5117f1b6393148b6c7d901}{
+\index{common.c@{common.c}!getuser@{getuser}}
+\index{getuser@{getuser}!common.c@{common.c}}
+\subsubsection[{getuser}]{\setlength{\rightskip}{0pt plus 5cm}gchar$\ast$ getuser ()}}
+\label{common_8c_a90fc447b9b5117f1b6393148b6c7d901}
+
+
+Get the current user in the system. 
+
+Tries to get the user that is current connected to system. As can be connectar more than one user, the application tries to get one if this can, otherwise unknown is returned. \begin{DoxyReturn}{Returns}
+One current user o unknown if can't. 
+\end{DoxyReturn}
+\hypertarget{common_8c_a2d88a48e729e443ff4ca9e9d4d0d050a}{
+\index{common.c@{common.c}!register\_\-log@{register\_\-log}}
+\index{register\_\-log@{register\_\-log}!common.c@{common.c}}
+\subsubsection[{register\_\-log}]{\setlength{\rightskip}{0pt plus 5cm}void register\_\-log ()}}
+\label{common_8c_a2d88a48e729e443ff4ca9e9d4d0d050a}
+
+
+Add a entry to log file. 
+
+Depend of a action this function add a new entry to a log file. 
+\begin{DoxyParams}{Parameters}
+\item[{\em info}]contain the all necessary information about the action. \end{DoxyParams}

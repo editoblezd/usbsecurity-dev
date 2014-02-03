@@ -1,0 +1,38 @@
+\indexentry{\_\discretionary {-}{}{}\_\discretionary {-}{}{}request@{\_\discretionary {-}{}{}\_\discretionary {-}{}{}request}|hyperpage}{5}
+\indexentry{DEV@{DEV}|hyperpage}{6}
+\indexentry{/media/4ec1cddc-\/24fd-\/4aaa-\/a1b9-\/43731b032863/home/editoblez/workspace/usb/src/common/common.h@{/media/4ec1cddc-\/24fd-\/4aaa-\/a1b9-\/43731b032863/home/editoblez/workspace/usb/src/common/common.h}|hyperpage}{7}
+\indexentry{common.h@{common.h}!get\_\discretionary {-}{}{}date@{get\_\discretionary {-}{}{}date}|hyperpage}{8}
+\indexentry{get\_\discretionary {-}{}{}date@{get\_\discretionary {-}{}{}date}!common.h@{common.h}|hyperpage}{8}
+\indexentry{common.h@{common.h}!getmsg@{getmsg}|hyperpage}{9}
+\indexentry{getmsg@{getmsg}!common.h@{common.h}|hyperpage}{9}
+\indexentry{common.h@{common.h}!getuser@{getuser}|hyperpage}{9}
+\indexentry{getuser@{getuser}!common.h@{common.h}|hyperpage}{9}
+\indexentry{common.h@{common.h}!register\_\discretionary {-}{}{}log@{register\_\discretionary {-}{}{}log}|hyperpage}{9}
+\indexentry{register\_\discretionary {-}{}{}log@{register\_\discretionary {-}{}{}log}!common.h@{common.h}|hyperpage}{9}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}|hyperpage}{10}
+\indexentry{COLUMN\_\-MARKED@{COLUMN\_\-MARKED}!usb-\/gui.h@{usb-\/gui.h}|hyperpage}{11}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}!COLUMN\_\-MARKED@{COLUMN\_\-MARKED}|hyperpage}{11}
+\indexentry{COLUMN\_\-ID@{COLUMN\_\-ID}!usb-\/gui.h@{usb-\/gui.h}|hyperpage}{11}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}!COLUMN\_\-ID@{COLUMN\_\-ID}|hyperpage}{11}
+\indexentry{COLUMN\_\-SERIAL@{COLUMN\_\-SERIAL}!usb-\/gui.h@{usb-\/gui.h}|hyperpage}{11}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}!COLUMN\_\-SERIAL@{COLUMN\_\-SERIAL}|hyperpage}{11}
+\indexentry{NUM\_\-COLUMNS@{NUM\_\-COLUMNS}!usb-\/gui.h@{usb-\/gui.h}|hyperpage}{11}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}!NUM\_\-COLUMNS@{NUM\_\-COLUMNS}|hyperpage}{11}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}!add\_\discretionary {-}{}{}item@{add\_\discretionary {-}{}{}item}|hyperpage}{11}
+\indexentry{add\_\discretionary {-}{}{}item@{add\_\discretionary {-}{}{}item}!usb-gui.h@{usb-\/gui.h}|hyperpage}{11}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}!authorize\_\discretionary {-}{}{}device@{authorize\_\discretionary {-}{}{}device}|hyperpage}{11}
+\indexentry{authorize\_\discretionary {-}{}{}device@{authorize\_\discretionary {-}{}{}device}!usb-gui.h@{usb-\/gui.h}|hyperpage}{11}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}!do\_\discretionary {-}{}{}list\_\discretionary {-}{}{}store@{do\_\discretionary {-}{}{}list\_\discretionary {-}{}{}store}|hyperpage}{11}
+\indexentry{do\_\discretionary {-}{}{}list\_\discretionary {-}{}{}store@{do\_\discretionary {-}{}{}list\_\discretionary {-}{}{}store}!usb-gui.h@{usb-\/gui.h}|hyperpage}{11}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}!fatal\_\discretionary {-}{}{}error\_\discretionary {-}{}{}signal@{fatal\_\discretionary {-}{}{}error\_\discretionary {-}{}{}signal}|hyperpage}{12}
+\indexentry{fatal\_\discretionary {-}{}{}error\_\discretionary {-}{}{}signal@{fatal\_\discretionary {-}{}{}error\_\discretionary {-}{}{}signal}!usb-gui.h@{usb-\/gui.h}|hyperpage}{12}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}!get\_\discretionary {-}{}{}new\_\discretionary {-}{}{}device\_\discretionary {-}{}{}id@{get\_\discretionary {-}{}{}new\_\discretionary {-}{}{}device\_\discretionary {-}{}{}id}|hyperpage}{12}
+\indexentry{get\_\discretionary {-}{}{}new\_\discretionary {-}{}{}device\_\discretionary {-}{}{}id@{get\_\discretionary {-}{}{}new\_\discretionary {-}{}{}device\_\discretionary {-}{}{}id}!usb-gui.h@{usb-\/gui.h}|hyperpage}{12}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}!main@{main}|hyperpage}{12}
+\indexentry{main@{main}!usb-gui.h@{usb-\/gui.h}|hyperpage}{12}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}!read\_\discretionary {-}{}{}devices\_\discretionary {-}{}{}list@{read\_\discretionary {-}{}{}devices\_\discretionary {-}{}{}list}|hyperpage}{12}
+\indexentry{read\_\discretionary {-}{}{}devices\_\discretionary {-}{}{}list@{read\_\discretionary {-}{}{}devices\_\discretionary {-}{}{}list}!usb-gui.h@{usb-\/gui.h}|hyperpage}{12}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}!remove\_\discretionary {-}{}{}item@{remove\_\discretionary {-}{}{}item}|hyperpage}{12}
+\indexentry{remove\_\discretionary {-}{}{}item@{remove\_\discretionary {-}{}{}item}!usb-gui.h@{usb-\/gui.h}|hyperpage}{12}
+\indexentry{usb-\/gui.h@{usb-\/gui.h}!update\_\discretionary {-}{}{}tool\_\discretionary {-}{}{}bar@{update\_\discretionary {-}{}{}tool\_\discretionary {-}{}{}bar}|hyperpage}{13}
+\indexentry{update\_\discretionary {-}{}{}tool\_\discretionary {-}{}{}bar@{update\_\discretionary {-}{}{}tool\_\discretionary {-}{}{}bar}!usb-gui.h@{usb-\/gui.h}|hyperpage}{13}

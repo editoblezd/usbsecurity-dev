@@ -1,0 +1,3 @@
+# List of source files which contain translatable strings.
+src/usb-gui/usb-gui.c
+src/usb-control/usb-control.c

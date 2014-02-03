@@ -1,0 +1,17 @@
+#Rules for usbsecurity-usbclient
+ACTION=="remove", GOTO="disk_usb_end"
+SUBSYSTEM!="block", GOTO="disk_usb_end"
+
+# for partitions import parent information
+ENV{DEVTYPE}=="partition", IMPORT{parent}="ID_*"
+
+#ignore floppy disk
+KERNEL=="fd*", ENV{UDISKS_PRESENTATION_HIDE}="1"
+
+#My Rule
+KERNEL=="sd?", ACTION=="add", ENV{ID_BUS}=="usb", SUBSYSTEM=="block", SUBSYSTEMS=="usb", PROGRAM!="@prefix@/sbin/usbcontrol -u %S%p", ENV{UDISKS_PRESENTATION_HIDE}="1"
+
+# skip unpartitioned removable media devices from drivers which do not send "change" events
+ENV{DEVTYPE}=="disk", KERNEL!="sd*|sr*", ATTR{removable}=="1", GOTO="disk_usb_end"
+
+LABEL="disk_usb_end"

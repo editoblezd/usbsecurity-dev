@@ -1,0 +1,84 @@
+.TH "/media/4ec1cddc-24fd-4aaa-a1b9-43731b032863/home/editoblez/workspace/usb/src/common/common.c" 3 "27 Jan 2013" "Version 0.1" "usb-control" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/media/4ec1cddc-24fd-4aaa-a1b9-43731b032863/home/editoblez/workspace/usb/src/common/common.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'common.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBregister_log\fP ()"
+.br
+.RI "\fIAdd a entry to log file. \fP"
+.ti -1c
+.RI "gchar * \fBget_date\fP ()"
+.br
+.RI "\fIGet a date in gchar * form. \fP"
+.ti -1c
+.RI "gchar * \fBgetuser\fP ()"
+.br
+.RI "\fIGet the current user in the system. \fP"
+.ti -1c
+.RI "const gchar * \fBgetmsg\fP ()"
+.br
+.RI "\fIName of action. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBAuthor:\fP
+.RS 4
+Edilberto Blez D. 
+.RE
+.PP
+
+.SH "Function Documentation"
+.PP 
+.SS "gchar* get_date ()"
+.PP
+Get a date in gchar * form. This function is used to retrieve the date from the system. 
+.PP
+\fBReturns:\fP
+.RS 4
+gchar * with the current date. 
+.RE
+.PP
+
+.SS "const gchar* getmsg ()"
+.PP
+Name of action. Get a name of the action according with the value of info.autorized. 
+.PP
+\fBReturns:\fP
+.RS 4
+a gchar * associate. 
+.RE
+.PP
+
+.SS "gchar* getuser ()"
+.PP
+Get the current user in the system. Tries to get the user that is current connected to system. As can be connectar more than one user, the application tries to get one if this can, otherwise unknown is returned. 
+.PP
+\fBReturns:\fP
+.RS 4
+One current user o unknown if can't. 
+.RE
+.PP
+
+.SS "void register_log ()"
+.PP
+Add a entry to log file. Depend of a action this function add a new entry to a log file. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinfo\fP contain the all necessary information about the action. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for usb-control from the source code.

@@ -1,0 +1,53 @@
+\begin{theindex}
+
+  \item {/media/4ec1cddc-\/24fd-\/4aaa-\/a1b9-\/43731b032863/home/editoblez/workspace/usb/src/common/common.h}, 
+		\hyperpage{7}
+  \item {\_\discretionary {-}{}{}\_\discretionary {-}{}{}request}, 
+		\hyperpage{5}
+
+  \indexspace
+
+  \item {common.h}
+    \subitem {get\_\discretionary {-}{}{}date}, \hyperpage{8}
+    \subitem {getmsg}, \hyperpage{9}
+    \subitem {getuser}, \hyperpage{9}
+    \subitem {register\_\discretionary {-}{}{}log}, \hyperpage{9}
+
+  \indexspace
+
+  \item {fail}
+    \subitem {usb-\/control.h}, \hyperpage{10}
+
+  \indexspace
+
+  \item {get\_\discretionary {-}{}{}date}
+    \subitem {common.h}, \hyperpage{8}
+  \item {getmsg}
+    \subitem {common.h}, \hyperpage{9}
+  \item {getuser}
+    \subitem {common.h}, \hyperpage{9}
+
+  \indexspace
+
+  \item {init\_\discretionary {-}{}{}values}
+    \subitem {usb-\/control.h}, \hyperpage{10}
+  \item {is\_\discretionary {-}{}{}authorized}
+    \subitem {usb-\/control.h}, \hyperpage{10}
+
+  \indexspace
+
+  \item {register\_\discretionary {-}{}{}a\_\discretionary {-}{}{}new\_\discretionary {-}{}{}device}
+    \subitem {usb-\/control.h}, \hyperpage{11}
+  \item {register\_\discretionary {-}{}{}log}
+    \subitem {common.h}, \hyperpage{9}
+
+  \indexspace
+
+  \item {usb-\/control.h}, \hyperpage{10}
+    \subitem {fail}, \hyperpage{10}
+    \subitem {init\_\discretionary {-}{}{}values}, \hyperpage{10}
+    \subitem {is\_\discretionary {-}{}{}authorized}, \hyperpage{10}
+    \subitem {register\_\discretionary {-}{}{}a\_\discretionary {-}{}{}new\_\discretionary {-}{}{}device}, 
+		\hyperpage{11}
+
+\end{theindex}

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Control de Dispositivos USB
+Comment=Controlador de los puerto USB
+Exec=usb-control-gtk
+Type=Application
+Icon=/usr/share/usb-control-gui/usb.png
+Categories=GNOME;System;
+Name[es_ES]=Control de Dispositivos USB

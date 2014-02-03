@@ -1,0 +1,4 @@
+#!/bin/sh
+
+gksu = "$(which gksu)"
+echo "$gksu jeje"

@@ -1,0 +1,109 @@
+.TH "usb-control.c" 3 "27 Jan 2013" "Version 0.1" "usb-control" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+usb-control.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'usb-control.h'\fP
+.br
+\fC#include <unistd.h>\fP
+.br
+\fC#include <glib.h>\fP
+.br
+\fC#include <glib/gprintf.h>\fP
+.br
+\fC#include <time.h>\fP
+.br
+\fC#include <utmp.h>\fP
+.br
+\fC#include <stdio.h>\fP
+.br
+\fC#include <stdlib.h>\fP
+.br
+\fC#include <string.h>\fP
+.br
+\fC#include <syslog.h>\fP
+.br
+\fC#include <sys/types.h>\fP
+.br
+\fC#include <err.h>\fP
+.br
+\fC#include <locale.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP (int argc, char *argv[])"
+.br
+.ti -1c
+.RI "gboolean \fBinit_values\fP ()"
+.br
+.RI "\fIinit the values in this file. \fP"
+.ti -1c
+.RI "int \fBfail\fP (char *dev)"
+.br
+.RI "\fIshut down the interface of the partition's device. \fP"
+.ti -1c
+.RI "void \fBregister_a_new_device\fP ()"
+.br
+.RI "\fIPut a new connected device in database. \fP"
+.ti -1c
+.RI "int \fBis_authorized\fP ()"
+.br
+.RI "\fICheck if the current device is authorized. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBAuthor:\fP
+.RS 4
+Edilberto Blez D. 
+.RE
+.PP
+
+.SH "Function Documentation"
+.PP 
+.SS "int fail (char * dev)"
+.PP
+shut down the interface of the partition's device. If this function is called that is because the device isi'n authorized and it must to shut down. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdev\fP is a name of the device node. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a value non-zero 
+.RE
+.PP
+
+.SS "gboolean init_values ()"
+.PP
+init the values in this file. This is one of the primary function that is called to connect a device. 
+.PP
+\fBReturns:\fP
+.RS 4
+either TRUE if all could be done or FALSE otherwise. 
+.RE
+.PP
+
+.SS "int is_authorized ()"
+.PP
+Check if the current device is authorized. This function retrieves information about the device. If the device has never been put in the system it get value 0. if has been put but its identify is 'No Autorizado' it get value 2. if has been authorized it get value 1. 
+.PP
+\fBReturns:\fP
+.RS 4
+either 1 if is authorized or (0 or 2) otherwise. 
+.RE
+.PP
+
+.SS "void register_a_new_device ()"
+.PP
+Put a new connected device in database. When you connect for first time a device it is added to the database with the 'No Autorizado' identify. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for usb-control from the source code.

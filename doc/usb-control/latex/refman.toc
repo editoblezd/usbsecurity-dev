@@ -1,0 +1,21 @@
+\contentsline {chapter}{\numberline {1}Data Structure Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Data Structures}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Data Structure Documentation}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}request Struct Reference}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}File Documentation}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}/media/4ec1cddc-\/24fd-\/4aaa-\/a1b9-\/43731b032863/home/editoblez/workspace/usb/src/common/common.h File Reference}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{8}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Function Documentation}{8}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}get\_\discretionary {-}{}{}date}{8}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}getmsg}{9}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {4.1.2.3}getuser}{9}{subsubsection.4.1.2.3}
+\contentsline {subsubsection}{\numberline {4.1.2.4}register\_\discretionary {-}{}{}log}{9}{subsubsection.4.1.2.4}
+\contentsline {section}{\numberline {4.2}usb-\/control.h File Reference}{10}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{10}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Function Documentation}{10}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}fail}{10}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}init\_\discretionary {-}{}{}values}{10}{subsubsection.4.2.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.3}is\_\discretionary {-}{}{}authorized}{11}{subsubsection.4.2.2.3}
+\contentsline {subsubsection}{\numberline {4.2.2.4}register\_\discretionary {-}{}{}a\_\discretionary {-}{}{}new\_\discretionary {-}{}{}device}{11}{subsubsection.4.2.2.4}

@@ -1,0 +1,15 @@
+#!/usr/bin/perl -w
+my $ent=`which gksu`;
+	if($ent =~ /gksu/g)
+	{
+		`gksu -u root /usr/sbin/usbgui`;
+	}
+	else
+	{
+		$ent=`which kdsu`;
+		if($ent =~ /kdsu/g)
+		{
+			`kdsu -u root /usr/sbin/usbgui`;
+			
+		}
+	}

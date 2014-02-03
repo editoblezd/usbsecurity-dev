@@ -1,0 +1,138 @@
+\hypertarget{common_8h}{
+\section{/media/4ec1cddc-\/24fd-\/4aaa-\/a1b9-\/43731b032863/home/editoblez/workspace/usb/src/common/common.h File Reference}
+\label{common_8h}\index{/media/4ec1cddc-\/24fd-\/4aaa-\/a1b9-\/43731b032863/home/editoblez/workspace/usb/src/common/common.h@{/media/4ec1cddc-\/24fd-\/4aaa-\/a1b9-\/43731b032863/home/editoblez/workspace/usb/src/common/common.h}}
+}
+{\ttfamily \#include $<$unistd.h$>$}\par
+{\ttfamily \#include $<$glib.h$>$}\par
+{\ttfamily \#include $<$glib/gprintf.h$>$}\par
+{\ttfamily \#include $<$time.h$>$}\par
+{\ttfamily \#include $<$utmp.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$syslog.h$>$}\par
+{\ttfamily \#include $<$sys/types.h$>$}\par
+{\ttfamily \#include $<$err.h$>$}\par
+{\ttfamily \#include $<$locale.h$>$}\par
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct____request}{\_\-\_\-request}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{common_8h_aa1f0559f8030e9c4a7434d677c854527}{
+\#define \hyperlink{common_8h_aa1f0559f8030e9c4a7434d677c854527}{DB}~\char`\"{}/etc/usb-\/control/database.db\char`\"{}}
+\label{common_8h_aa1f0559f8030e9c4a7434d677c854527}
+
+\begin{DoxyCompactList}\small\item\em Place where are the database. \item\end{DoxyCompactList}\item 
+\hypertarget{common_8h_a159ca84d25a5487d8e81e4438725df19}{
+\#define \hyperlink{common_8h_a159ca84d25a5487d8e81e4438725df19}{LOG}~\char`\"{}/var/log/usb-\/control.log\char`\"{}}
+\label{common_8h_a159ca84d25a5487d8e81e4438725df19}
+
+\begin{DoxyCompactList}\small\item\em Place where are the application's logs. \item\end{DoxyCompactList}\item 
+\hypertarget{common_8h_a1eac2d0012e3bfaec406f45c140087a3}{
+\#define \hyperlink{common_8h_a1eac2d0012e3bfaec406f45c140087a3}{NO\_\-AUTORIZADO}~\char`\"{}No autorizado\char`\"{}}
+\label{common_8h_a1eac2d0012e3bfaec406f45c140087a3}
+
+\begin{DoxyCompactList}\small\item\em Default identifier for connected device new to system. \item\end{DoxyCompactList}\item 
+\hypertarget{common_8h_a726048a97001612ad0a686d64c00b542}{
+\#define \hyperlink{common_8h_a726048a97001612ad0a686d64c00b542}{ENV\_\-SERIAL}~\char`\"{}ID\_\-SERIAL\_\-SHORT\char`\"{}}
+\label{common_8h_a726048a97001612ad0a686d64c00b542}
+
+\begin{DoxyCompactList}\small\item\em Serial number short imported from udev environment. \item\end{DoxyCompactList}\item 
+\hypertarget{common_8h_a3af087a234bda5cbce8ee86877f2d9fe}{
+\#define \hyperlink{common_8h_a3af087a234bda5cbce8ee86877f2d9fe}{ENV\_\-DEVTYPE}~\char`\"{}DEVTYPE\char`\"{}}
+\label{common_8h_a3af087a234bda5cbce8ee86877f2d9fe}
+
+\begin{DoxyCompactList}\small\item\em Devtype imported from udev environment. \item\end{DoxyCompactList}\item 
+\hypertarget{common_8h_a0376b2ead2de10bb7ab6a4d21ec304e9}{
+\#define \hyperlink{common_8h_a0376b2ead2de10bb7ab6a4d21ec304e9}{LOCK}~\char`\"{}/tmp/usbsecurity.lock\char`\"{}}
+\label{common_8h_a0376b2ead2de10bb7ab6a4d21ec304e9}
+
+\begin{DoxyCompactList}\small\item\em This file avoid instances multiple of this application. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{common_8h_a793561fcb307bb314ed71c86fa7ea437}{
+typedef struct \hyperlink{struct____request}{\_\-\_\-request} {\bfseries request}}
+\label{common_8h_a793561fcb307bb314ed71c86fa7ea437}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{common_8h_a2d88a48e729e443ff4ca9e9d4d0d050a}{register\_\-log} ()
+\begin{DoxyCompactList}\small\item\em Add a entry to log file. \item\end{DoxyCompactList}\item 
+gchar $\ast$ \hyperlink{common_8h_aaa309506405ecbe85e807e466bc02511}{get\_\-date} ()
+\begin{DoxyCompactList}\small\item\em Get a date in gchar $\ast$ form. \item\end{DoxyCompactList}\item 
+gchar $\ast$ \hyperlink{common_8h_a90fc447b9b5117f1b6393148b6c7d901}{getuser} ()
+\begin{DoxyCompactList}\small\item\em Get the current user in the system. \item\end{DoxyCompactList}\item 
+const gchar $\ast$ \hyperlink{common_8h_addedbaab8e213385906b594e39111bbf}{getmsg} ()
+\begin{DoxyCompactList}\small\item\em Name of action. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{common_8h_a9b487951b60f7d888644739b89190c96}{
+\hyperlink{struct____request}{request} {\bfseries info}}
+\label{common_8h_a9b487951b60f7d888644739b89190c96}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Edilberto Blez D. 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{common_8h_aaa309506405ecbe85e807e466bc02511}{
+\index{common.h@{common.h}!get\_\-date@{get\_\-date}}
+\index{get\_\-date@{get\_\-date}!common.h@{common.h}}
+\subsubsection[{get\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}gchar$\ast$ get\_\-date ()}}
+\label{common_8h_aaa309506405ecbe85e807e466bc02511}
+
+
+Get a date in gchar $\ast$ form. 
+
+This function is used to retrieve the date from the system. \begin{DoxyReturn}{Returns}
+gchar $\ast$ with the current date. 
+\end{DoxyReturn}
+\hypertarget{common_8h_addedbaab8e213385906b594e39111bbf}{
+\index{common.h@{common.h}!getmsg@{getmsg}}
+\index{getmsg@{getmsg}!common.h@{common.h}}
+\subsubsection[{getmsg}]{\setlength{\rightskip}{0pt plus 5cm}const gchar$\ast$ getmsg ()}}
+\label{common_8h_addedbaab8e213385906b594e39111bbf}
+
+
+Name of action. 
+
+Get a name of the action according with the value of info.autorized. \begin{DoxyReturn}{Returns}
+a gchar $\ast$ associate. 
+\end{DoxyReturn}
+\hypertarget{common_8h_a90fc447b9b5117f1b6393148b6c7d901}{
+\index{common.h@{common.h}!getuser@{getuser}}
+\index{getuser@{getuser}!common.h@{common.h}}
+\subsubsection[{getuser}]{\setlength{\rightskip}{0pt plus 5cm}gchar$\ast$ getuser ()}}
+\label{common_8h_a90fc447b9b5117f1b6393148b6c7d901}
+
+
+Get the current user in the system. 
+
+Tries to get the user that is current connected to system. As can be connectar more than one user, the application tries to get one if this can, otherwise unknown is returned. \begin{DoxyReturn}{Returns}
+One current user o unknown if can't. 
+\end{DoxyReturn}
+\hypertarget{common_8h_a2d88a48e729e443ff4ca9e9d4d0d050a}{
+\index{common.h@{common.h}!register\_\-log@{register\_\-log}}
+\index{register\_\-log@{register\_\-log}!common.h@{common.h}}
+\subsubsection[{register\_\-log}]{\setlength{\rightskip}{0pt plus 5cm}void register\_\-log ()}}
+\label{common_8h_a2d88a48e729e443ff4ca9e9d4d0d050a}
+
+
+Add a entry to log file. 
+
+Depend of a action this function add a new entry to a log file. 
+\begin{DoxyParams}{Parameters}
+\item[{\em info}]contain the all necessary information about the action. \end{DoxyParams}
